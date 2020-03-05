@@ -1,0 +1,1 @@
+{"version":3,"sources":["sidebar.scss"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,gBAAgB,EAAA","file":"sidebar.css","sourcesContent":[".sidebar {\n  grid-area: sidebar;\n  margin-top: 40px;\n}\n"]}

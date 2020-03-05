@@ -1,0 +1,9 @@
+.page {
+  display: grid;
+  grid-template-areas: " header header header header " " . main sidebar . " " footer footer footer footer ";
+  grid-template-columns: auto 490px 330px auto;
+  -webkit-column-gap: 80px;
+     -moz-column-gap: 80px;
+          column-gap: 80px; }
+
+/*# sourceMappingURL=page.css.map */

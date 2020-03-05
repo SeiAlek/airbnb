@@ -1,0 +1,36 @@
+.header {
+  grid-area: header;
+  width: 100%; }
+  .header__top-line {
+    display: grid;
+    grid-template-columns: 82px auto 68px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 60px;
+    width: 100%;
+    background-color: #fff; }
+  .header__link {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin: 0 auto; }
+  .header__logo {
+    width: 100%;
+    text-align: center; }
+  .header__nav {
+    margin: 3px 20px 0; }
+  .header__user {
+    text-align: center; }
+  .header__user-img {
+    width: 100%; }
+  .header__photo {
+    height: 464px;
+    width: 100%;
+    background-image: url("../images/apartment.jpg");
+    background-position: center;
+    background-size: cover; }
+    @media screen and (min-width: 2000px) {
+      .header__photo {
+        background-image: url("../images/apartment-big.jpg"); } }
+
+/*# sourceMappingURL=header.css.map */

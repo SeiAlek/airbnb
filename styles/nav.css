@@ -1,0 +1,24 @@
+.nav__list {
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end; }
+
+.nav__item {
+  list-style: none; }
+
+.nav__link {
+  font-weight: 900;
+  color: #3d4e61;
+  text-decoration: none;
+  -webkit-transition: color 1s;
+  transition: color 1s; }
+  .nav__link:hover {
+    color: #118488;
+    text-decoration: underline; }
+
+/*# sourceMappingURL=nav.css.map */

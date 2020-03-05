@@ -1,0 +1,27 @@
+.review {
+  margin-bottom: 66px; }
+  .review__item {
+    display: grid;
+    grid-template-areas: " photo author " " photo date " " text text ";
+    grid-template-columns: 50px auto;
+    -webkit-column-gap: 21px;
+       -moz-column-gap: 21px;
+            column-gap: 21px;
+    margin-top: 34px;
+    list-style: none; }
+  .review__author {
+    grid-area: author;
+    margin: 0; }
+  .review__photo {
+    grid-area: photo; }
+  .review__date {
+    font-family: "Avenir", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3d4e61;
+    grid-area: date; }
+  .review__text {
+    grid-area: text;
+    margin-top: 23px; }
+
+/*# sourceMappingURL=review.css.map */

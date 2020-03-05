@@ -1,0 +1,72 @@
+.apartment__headline {
+  margin: 0 0 10px; }
+
+.apartment__info {
+  margin-bottom: 66px; }
+
+.apartment__entire {
+  color: #687c94;
+  margin-bottom: 15px; }
+
+.apartment__props {
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start; }
+
+.apartment__description {
+  margin: 28px 0 44px;
+  line-height: 24px; }
+
+.apartment__link-bold {
+  font-weight: 900;
+  color: #3d4e61;
+  text-decoration: none;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  display: inline-block;
+  margin-top: 28px; }
+  .apartment__link-bold:hover {
+    color: #118488;
+    text-decoration: underline; }
+
+.apartment__amenities-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 15px; }
+
+.apartment__host {
+  margin-bottom: 88px; }
+
+.apartment__host-name {
+  margin: 0 0 10px; }
+
+.apartment__place {
+  font-family: "Avenir", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3d4e61; }
+
+.apartment__place-description {
+  margin: 20px 0; }
+
+.apartment__button {
+  display: block;
+  width: 150px;
+  font-weight: 900;
+  text-decoration: none;
+  color: #118488;
+  border: 1px solid #118488;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px; }
+  .apartment__button:hover {
+    color: #fff;
+    background-color: #118488;
+    border: 1px solid #118488; }
+
+/*# sourceMappingURL=apartment.css.map */
