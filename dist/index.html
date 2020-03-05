@@ -2,12 +2,165 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirBnB</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/svg">
   </head>
-  <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello Mate academy</h1>
+  <body class="page">
+    <header class="header">
+      <section class="header__top-line">
+        <div class="header__logo">
+          <a href="/" class="header__link">
+            <img src="./images/logo.svg" alt="AirBnB" class="header__logo-img">
+          </a>
+        </div>
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Become a host</a>
+            </li>
+            <li class="nav__item"
+            ><a href="#" class="nav__link">Trips</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Messages</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__user">
+          <a href="#" class="header__link">
+            <img src="./images/avatar.png" alt="User Avatar" class="header__user-img">
+          </a>
+        </div>
+      </section>
+      <section class="header__photo"></section>
+    </header>
+    <main class="content">
+      <article class="apartment">
+        <h1 class="apartment__headline">
+          Quiet apartment
+        </h1>
+        <section class="apartment__info">
+          <div class="apartment__overview">
+            <div class="apartment__entire">
+              Entire apartment
+            </div>
+            <div class="apartment__props">
+              <div class="apartment__prop">
+                4 guests
+              </div>
+              <div class="apartment__prop">
+                1 bed
+              </div>
+              <div class="apartment__prop">
+                1 bath
+              </div>
+            </div>
+            </div>
+          <div class="apartment__description">
+            <p>
+              City Apartment is newly renovated in the heart of Budapest, right in the city center. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <a href="#" class="apartment__link-bold">
+              Contact host
+            </a>
+          </div>
+          <div class="apartment__amenities">
+            <h3 class="apartment__amenities-headline">
+              Amenities
+            </h3>
+            <div class="apartment__amenities-list">
+              <div class="amenity">Elevator</div>
+              <div class="amenity">Washer</div>
+              <div class="amenity">Hair dryer</div>
+              <div class="amenity">Kitchen</div>
+            </div>
+            <a href="#" class="apartment__link-bold">
+              Show All Amenities
+            </a>
+          </div>
+        </section>
+
+        <section class="review">
+          <h2 class="review__headline">Reviews</h2>
+          <ul class="review__list">
+            <li class="review__item">
+              <h3 class="review__author">
+                John
+              </h3>
+              <div class="review__photo">
+                <img src="./images/gray-round.svg" alt="John" class="review__avatar-image">
+              </div>
+              <div class="review__date">
+                September 2016
+              </div>
+              <div class="review__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              </div>
+            </li>
+            <li class="review__item">
+              <h3 class="review__author">
+                John
+              </h3>
+              <div class="review__avatar">
+                <img src="./images/gray-round.svg" alt="John" class="review__avatar-image">
+              </div>
+              <div class="review__date">
+                September 2016
+              </div>
+              <div class="review__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="apartment__host">
+          <h2 class="apartment__host-name">
+            Hosted by Jane
+          </h2>
+          <div class="apartment__place">
+            Budapest, Hungary
+          </div>
+          <div class="apartment__place-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+          </div>
+          <a href="#" class="apartment__button button">
+            Contact Host
+          </a>
+        </section>
+      </article>
+    </main>
+    <aside class="sidebar">
+      <form id="booking-form" class="form" action="" method="POST">
+        <div class="form__price">
+          25$ per night
+        </div>
+        <input class="form__input" type="text" name="date" id="booking-form-date" placeholder="Date">
+        <input class="form__input" type="text" name="guests" id="booking-form-guests" placeholder="Guests">
+        <button class="form__button button" type="submit">Book</button>
+      </form>
+    </aside>
+    <footer class="footer">
+      <section class="footer__section">
+        <h2 class="footer__header">Airbnb</h2>
+        <a href="#" class="footer__link">About</a>
+        <a href="#" class="footer__link">Press</a>
+        <a href="#" class="footer__link">Help</a>
+      </section>
+      <section class="footer__section">
+        <h2 class="footer__header">Discover</h2>
+        <a href="#" class="footer__link">Travel credit</a>
+        <a href="#" class="footer__link">Business</a>
+        <a href="#" class="footer__link">Guidebooks</a>
+      </section>
+      <section class="footer__section">
+        <h2 class="footer__header">Hosting</h2>
+        <a href="#" class="footer__link">Why host</a>
+        <a href="#" class="footer__link">Hospitality</a>
+        <a href="#" class="footer__link">Community</a>
+      </section>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

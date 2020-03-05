@@ -1,0 +1,27 @@
+@import "utils";
+
+.footer {
+  display: grid;
+  grid-area: footer;
+  grid-auto-flow: column;
+  grid-template-columns: 280px 280px 280px;
+  column-gap: 30px;
+  justify-content: center;
+  box-shadow: 0 -1px 0 #e1e7ed;
+
+  &__section {
+    margin: 44px 0;
+  }
+
+  &__header {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__link {
+    @include link;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+}

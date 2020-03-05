@@ -1,7 +1,14 @@
-@import "utils";
 @import "fonts";
+@import "utils";
 @import "typography";
+@import "button";
 
-body {
-  background: $c-gray;
-}
+@import "page";
+@import "header";
+@import "nav";
+@import "content";
+@import "apartment";
+@import "review";
+@import "sidebar";
+@import "form";
+@import "footer";

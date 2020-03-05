@@ -1,0 +1,35 @@
+@import "utils";
+
+.review {
+  margin-bottom: 66px;
+
+  &__item {
+    display: grid;
+    grid-template-areas: " photo author "
+      " photo date "
+      " text text ";
+    grid-template-columns: 50px auto;
+    column-gap: 21px;
+    margin-top: 34px;
+    list-style: none;
+  }
+
+  &__author {
+    grid-area: author;
+    margin: 0;
+  }
+
+  &__photo {
+    grid-area: photo;
+  }
+
+  &__date {
+    @include fontStyleSmall;
+    grid-area: date;
+  }
+
+  &__text {
+    grid-area: text;
+    margin-top: 23px;
+  }
+}

@@ -1,0 +1,74 @@
+@import "utils";
+
+.apartment {
+  &__headline {
+    margin: 0 0 10px;
+  }
+
+  &__info {
+    margin-bottom: 66px;
+  }
+
+  &__entire {
+    color: #687c94;
+    margin-bottom: 15px;
+  }
+
+  &__props {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 30px;
+    justify-content: start;
+  }
+
+  &__description {
+    margin: 28px 0 44px;
+    line-height: 24px;
+  }
+
+  &__link-bold {
+    @include link;
+    @include linkTransform;
+    display: inline-block;
+    margin-top: 28px;
+  }
+
+  &__amenities-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+  }
+
+  &__host {
+    margin-bottom: 88px;
+  }
+
+  &__host-name {
+    margin: 0 0 10px;
+  }
+
+  &__place {
+    @include fontStyleSmall;
+  }
+
+  &__place-description {
+    margin: 20px 0;
+  }
+
+  &__button {
+    display: block;
+    width: 150px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #118488;
+    border: 1px solid #118488;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    &:hover {
+      color: #fff;
+      background-color: #118488;
+      border: 1px solid #118488;
+    }
+  }
+}

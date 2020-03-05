@@ -1,0 +1,19 @@
+@import "utils";
+
+.nav {
+  &__list {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 40px;
+    justify-content: end;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    @include link;
+    @include linkTransform;
+  }
+}
