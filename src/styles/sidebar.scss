@@ -1,4 +1,12 @@
 .sidebar {
   grid-area: sidebar;
   margin-top: 40px;
+
+  @media (max-width: 800px) {
+    margin: 20px auto;
+  }
+
+  @media (max-width: 640px) {
+    margin: 20px;
+  }
 }

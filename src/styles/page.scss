@@ -5,4 +5,18 @@
     " footer footer footer footer ";
   grid-template-columns: auto 490px 330px auto;
   column-gap: 80px;
+
+  @media (max-width: 1060px) {
+    grid-template-columns: auto 4fr 3fr auto;
+    column-gap: 40px;
+  }
+
+  @media (max-width: 800px) {
+    grid-template-areas: "header"
+      "sidebar"
+      "main"
+      "footer";
+    grid-template-columns: auto;
+    column-gap: 0;
+  }
 }

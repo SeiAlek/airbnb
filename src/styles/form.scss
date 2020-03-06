@@ -5,7 +5,7 @@
   font-weight: 600;
   box-sizing: border-box;
   background: #fff;
-  border: 1px solid #e1e7ed;
+  border: 1px solid $borderColor;
   border-radius: 3px;
 
   &__price {
@@ -18,7 +18,7 @@
     margin-bottom: 32px;
     padding: 14px 17px;
     box-sizing: border-box;
-    border: 1px solid #e1e7ed;
+    border: 1px solid $borderColor;
   }
 
   &__button {

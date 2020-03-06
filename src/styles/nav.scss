@@ -6,6 +6,12 @@
     grid-auto-flow: column;
     column-gap: 40px;
     justify-content: end;
+
+    @media (max-width: 640px) {
+      column-gap: 20px;
+      justify-content: center;
+      font-size: 13px;
+    }
   }
 
   &__item {

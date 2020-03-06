@@ -10,6 +10,10 @@
   }
 
   &__entire {
+    @include indentReset;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 19px;
     color: #687c94;
     margin-bottom: 15px;
   }
@@ -19,6 +23,10 @@
     grid-auto-flow: column;
     column-gap: 30px;
     justify-content: start;
+  }
+
+  &__prop {
+    list-style: none;
   }
 
   &__description {
@@ -33,14 +41,22 @@
     margin-top: 28px;
   }
 
-  &__amenities-list {
+  &__amenity-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 15px;
   }
 
+  &__amenity {
+    list-style: none;
+  }
+
   &__host {
     margin-bottom: 88px;
+
+    @media (max-width: 490px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__host-name {
@@ -49,6 +65,7 @@
 
   &__place {
     @include fontStyleSmall;
+    font-style: normal;
   }
 
   &__place-description {
@@ -60,15 +77,19 @@
     width: 150px;
     font-weight: 900;
     text-decoration: none;
-    color: #118488;
-    border: 1px solid #118488;
+    color: $hoverColor;
+    border: 1px solid $hoverColor;
     box-sizing: border-box;
     border-radius: 4px;
 
+    @media (max-width: 490px) {
+      margin: auto;
+    }
+
     &:hover {
       color: #fff;
-      background-color: #118488;
-      border: 1px solid #118488;
+      background-color: $hoverColor;
+      border: 1px solid $hoverColor;
     }
   }
 }

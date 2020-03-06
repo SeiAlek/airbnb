@@ -5,30 +5,28 @@
   &__top-line {
     display: grid;
     grid-template-columns: 82px auto 68px;
-    align-content: center;
+    align-items: center;
     height: 60px;
-    width: 100%;
     background-color: #fff;
+
+    @media (max-width: 490px) {
+      grid-template-columns: 40px auto 40px ;
+    }
   }
 
   &__link {
     display: block;
     height: 30px;
     width: 30px;
-    margin: 0 auto;
-  }
-
-  &__logo {
-    width: 100%;
-    text-align: center;
+    margin: auto;
   }
 
   &__nav {
     margin: 3px 20px 0;
-  }
 
-  &__user {
-    text-align: center;
+    @media (max-width: 490px) {
+      margin: 3px 0 0;
+    }
   }
 
   &__user-img {
@@ -41,6 +39,10 @@
     background-image: url("../images/apartment.jpg");
     background-position: center;
     background-size: cover;
+
+    @media (max-width: 800px) {
+      height: 300px;
+    }
 
     @media screen and (min-width: 2000px) {
       background-image: url("../images/apartment-big.jpg");

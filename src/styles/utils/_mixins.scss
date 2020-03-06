@@ -1,9 +1,9 @@
 @mixin buttonTransform {
-  transition: color 1s, border 1s, background-color 1s;
+  transition: color 0.3s, border 0.3s, background-color 0.3s;
 }
 
 @mixin linkTransform {
-  transition: color 1s;
+  transition: color 0.3s;
 }
 
 @mixin h1 {
@@ -31,23 +31,23 @@
   font-family: "Avenir", sans-serif;
   font-size: 16px;
   line-height: 19px;
-  color: #3d4e61;
+  color: $mainColor;
 }
 
 @mixin fontStyleSmall {
   font-family: "Avenir", sans-serif;
   font-size: 14px;
   line-height: 16px;
-  color: #3d4e61;
+  color: $mainColor;
 }
 
 @mixin link {
   font-weight: 900;
-  color: #3d4e61;
+  color: $mainColor;
   text-decoration: none;
 
   &:hover {
-    color: #118488;
+    color: $hoverColor;
     text-decoration: underline;
   }
 }

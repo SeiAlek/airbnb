@@ -1,4 +1,8 @@
 .content {
   grid-area: main;
   margin-top: 40px;
+
+  @media (max-width: 800px) {
+    margin: 20px;
+  }
 }

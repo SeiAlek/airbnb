@@ -1,19 +1,16 @@
 @font-face {
   font-family: "Avenir";
   font-weight: 300;
-  font-style: normal;
   src: url("../fonts/Avenir-Book.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Avenir";
   font-weight: 600;
-  font-style: normal;
   src: url("../fonts/Avenir-Medium.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Avenir";
   font-weight: 900;
-  font-style: normal;
   src: url("../fonts/Avenir-Heavy.ttf") format("truetype"); }
 
 body {
@@ -47,8 +44,8 @@ ul {
   padding: 0; }
 
 .button {
-  -webkit-transition: color 1s, border 1s, background-color 1s;
-  transition: color 1s, border 1s, background-color 1s;
+  -webkit-transition: color 0.3s, border 0.3s, background-color 0.3s;
+  transition: color 0.3s, border 0.3s, background-color 0.3s;
   height: 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -63,6 +60,19 @@ ul {
   -webkit-column-gap: 80px;
      -moz-column-gap: 80px;
           column-gap: 80px; }
+  @media (max-width: 1060px) {
+    .page {
+      grid-template-columns: auto 4fr 3fr auto;
+      -webkit-column-gap: 40px;
+         -moz-column-gap: 40px;
+              column-gap: 40px; } }
+  @media (max-width: 800px) {
+    .page {
+      grid-template-areas: "header" "sidebar" "main" "footer";
+      grid-template-columns: auto;
+      -webkit-column-gap: 0;
+         -moz-column-gap: 0;
+              column-gap: 0; } }
 
 .header {
   grid-area: header;
@@ -70,23 +80,24 @@ ul {
   .header__top-line {
     display: grid;
     grid-template-columns: 82px auto 68px;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 60px;
-    width: 100%;
     background-color: #fff; }
+    @media (max-width: 490px) {
+      .header__top-line {
+        grid-template-columns: 40px auto 40px; } }
   .header__link {
     display: block;
     height: 30px;
     width: 30px;
-    margin: 0 auto; }
-  .header__logo {
-    width: 100%;
-    text-align: center; }
+    margin: auto; }
   .header__nav {
     margin: 3px 20px 0; }
-  .header__user {
-    text-align: center; }
+    @media (max-width: 490px) {
+      .header__nav {
+        margin: 3px 0 0; } }
   .header__user-img {
     width: 100%; }
   .header__photo {
@@ -95,6 +106,9 @@ ul {
     background-image: url("../images/apartment.jpg");
     background-position: center;
     background-size: cover; }
+    @media (max-width: 800px) {
+      .header__photo {
+        height: 300px; } }
     @media screen and (min-width: 2000px) {
       .header__photo {
         background-image: url("../images/apartment-big.jpg"); } }
@@ -108,6 +122,15 @@ ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end; }
+  @media (max-width: 640px) {
+    .nav__list {
+      -webkit-column-gap: 20px;
+         -moz-column-gap: 20px;
+              column-gap: 20px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      font-size: 13px; } }
 
 .nav__item {
   list-style: none; }
@@ -116,8 +139,8 @@ ul {
   font-weight: 900;
   color: #3d4e61;
   text-decoration: none;
-  -webkit-transition: color 1s;
-  transition: color 1s; }
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s; }
   .nav__link:hover {
     color: #118488;
     text-decoration: underline; }
@@ -125,6 +148,9 @@ ul {
 .content {
   grid-area: main;
   margin-top: 40px; }
+  @media (max-width: 800px) {
+    .content {
+      margin: 20px; } }
 
 .apartment__headline {
   margin: 0 0 10px; }
@@ -133,6 +159,11 @@ ul {
   margin-bottom: 66px; }
 
 .apartment__entire {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 19px;
   color: #687c94;
   margin-bottom: 15px; }
 
@@ -146,6 +177,9 @@ ul {
       -ms-flex-pack: start;
           justify-content: start; }
 
+.apartment__prop {
+  list-style: none; }
+
 .apartment__description {
   margin: 28px 0 44px;
   line-height: 24px; }
@@ -154,21 +188,27 @@ ul {
   font-weight: 900;
   color: #3d4e61;
   text-decoration: none;
-  -webkit-transition: color 1s;
-  transition: color 1s;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
   display: inline-block;
   margin-top: 28px; }
   .apartment__link-bold:hover {
     color: #118488;
     text-decoration: underline; }
 
-.apartment__amenities-list {
+.apartment__amenity-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 15px; }
 
+.apartment__amenity {
+  list-style: none; }
+
 .apartment__host {
   margin-bottom: 88px; }
+  @media (max-width: 490px) {
+    .apartment__host {
+      margin-bottom: 20px; } }
 
 .apartment__host-name {
   margin: 0 0 10px; }
@@ -177,7 +217,8 @@ ul {
   font-family: "Avenir", sans-serif;
   font-size: 14px;
   line-height: 16px;
-  color: #3d4e61; }
+  color: #3d4e61;
+  font-style: normal; }
 
 .apartment__place-description {
   margin: 20px 0; }
@@ -192,6 +233,9 @@ ul {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px; }
+  @media (max-width: 490px) {
+    .apartment__button {
+      margin: auto; } }
   .apartment__button:hover {
     color: #fff;
     background-color: #118488;
@@ -212,7 +256,8 @@ ul {
     grid-area: author;
     margin: 0; }
   .review__photo {
-    grid-area: photo; }
+    grid-area: photo;
+    width: 50px; }
   .review__date {
     font-family: "Avenir", sans-serif;
     font-size: 14px;
@@ -226,6 +271,12 @@ ul {
 .sidebar {
   grid-area: sidebar;
   margin-top: 40px; }
+  @media (max-width: 800px) {
+    .sidebar {
+      margin: 20px auto; } }
+  @media (max-width: 640px) {
+    .sidebar {
+      margin: 20px; } }
 
 .form {
   padding: 30px;
@@ -272,10 +323,24 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 44px 0;
   -webkit-box-shadow: 0 -1px 0 #e1e7ed;
           box-shadow: 0 -1px 0 #e1e7ed; }
-  .footer__section {
-    margin: 44px 0; }
+  @media (max-width: 1060px) {
+    .footer {
+      grid-template-columns: 1fr 1fr 1fr; } }
+  @media (max-width: 490px) {
+    .footer {
+      -webkit-column-gap: 10px;
+         -moz-column-gap: 10px;
+              column-gap: 10px;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      font-size: 14px; } }
+  .footer__section:first-child {
+    margin-left: 20px; }
+  .footer__section:last-child {
+    margin-right: 20px; }
   .footer__header {
     font-size: 16px;
     line-height: 19px; }
