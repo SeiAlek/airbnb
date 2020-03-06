@@ -13,7 +13,8 @@
     grid-area: author;
     margin: 0; }
   .review__photo {
-    grid-area: photo; }
+    grid-area: photo;
+    width: 50px; }
   .review__date {
     font-family: "Avenir", sans-serif;
     font-size: 14px;

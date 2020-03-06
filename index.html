@@ -10,29 +10,25 @@
   <body class="page">
     <header class="header">
       <section class="header__top-line">
-        <div class="header__logo">
-          <a href="/" class="header__link">
-            <img src="./images/logo.svg" alt="AirBnB" class="header__logo-img">
-          </a>
-        </div>
+        <a href="/" class="header__link">
+          <img src="./images/logo.svg" alt="AirBnB" class="header__logo-img">
+        </a>
         <nav class="nav header__nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#" class="nav__link">Become a host</a>
             </li>
-            <li class="nav__item"
-            ><a href="#" class="nav__link">Trips</a>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Trips</a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">Messages</a>
             </li>
           </ul>
         </nav>
-        <div class="header__user">
-          <a href="#" class="header__link">
-            <img src="./images/avatar.png" alt="User Avatar" class="header__user-img">
-          </a>
-        </div>
+        <a href="#" class="header__link">
+          <img src="./images/avatar.png" alt="User Avatar" class="header__user-img">
+        </a>
       </section>
       <section class="header__photo"></section>
     </header>
@@ -43,20 +39,20 @@
         </h1>
         <section class="apartment__info">
           <div class="apartment__overview">
-            <div class="apartment__entire">
+            <h3 class="apartment__entire">
               Entire apartment
-            </div>
-            <div class="apartment__props">
-              <div class="apartment__prop">
+            </h3>
+            <ul class="apartment__props">
+              <li class="apartment__prop">
                 4 guests
-              </div>
-              <div class="apartment__prop">
+              </li>
+              <li class="apartment__prop">
                 1 bed
-              </div>
-              <div class="apartment__prop">
+              </li>
+              <li class="apartment__prop">
                 1 bath
-              </div>
-            </div>
+              </li>
+            </ul>
             </div>
           <div class="apartment__description">
             <p>
@@ -70,12 +66,12 @@
             <h3 class="apartment__amenities-headline">
               Amenities
             </h3>
-            <div class="apartment__amenities-list">
-              <div class="amenity">Elevator</div>
-              <div class="amenity">Washer</div>
-              <div class="amenity">Hair dryer</div>
-              <div class="amenity">Kitchen</div>
-            </div>
+            <ul class="apartment__amenity-list">
+              <li class="apartment__amenity">Elevator</li>
+              <li class="apartment__amenity">Washer</li>
+              <li class="apartment__amenity">Hair dryer</li>
+              <li class="apartment__amenity">Kitchen</li>
+            </ul>
             <a href="#" class="apartment__link-bold">
               Show All Amenities
             </a>
@@ -89,29 +85,25 @@
               <h3 class="review__author">
                 John
               </h3>
-              <div class="review__photo">
-                <img src="./images/gray-round.svg" alt="John" class="review__avatar-image">
-              </div>
+              <img src="./images/gray-round.svg" alt="John" class="review__photo">
               <div class="review__date">
                 September 2016
               </div>
-              <div class="review__text">
+              <p class="review__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-              </div>
+              </p>
             </li>
             <li class="review__item">
               <h3 class="review__author">
                 John
               </h3>
-              <div class="review__avatar">
-                <img src="./images/gray-round.svg" alt="John" class="review__avatar-image">
-              </div>
+              <img src="./images/gray-round.svg" alt="John" class="review__photo">
               <div class="review__date">
                 September 2016
               </div>
-              <div class="review__text">
+              <p class="review__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-              </div>
+              </p>
             </li>
           </ul>
         </section>
@@ -119,12 +111,12 @@
           <h2 class="apartment__host-name">
             Hosted by Jane
           </h2>
-          <div class="apartment__place">
+          <address class="apartment__place">
             Budapest, Hungary
-          </div>
-          <div class="apartment__place-description">
+          </address>
+          <p class="apartment__place-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
-          </div>
+          </p>
           <a href="#" class="apartment__button button">
             Contact Host
           </a>
@@ -136,8 +128,8 @@
         <div class="form__price">
           25$ per night
         </div>
-        <input class="form__input" type="text" name="date" id="booking-form-date" placeholder="Date">
-        <input class="form__input" type="text" name="guests" id="booking-form-guests" placeholder="Guests">
+        <input class="form__input" type="date" name="date" id="booking-form-date" placeholder="Date">
+        <input class="form__input" type="number" name="guests" id="booking-form-guests" placeholder="Guests">
         <button class="form__button button" type="submit">Book</button>
       </form>
     </aside>
@@ -161,6 +153,5 @@
         <a href="#" class="footer__link">Community</a>
       </section>
     </footer>
-    <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

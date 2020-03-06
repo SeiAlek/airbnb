@@ -9,10 +9,24 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 44px 0;
   -webkit-box-shadow: 0 -1px 0 #e1e7ed;
           box-shadow: 0 -1px 0 #e1e7ed; }
-  .footer__section {
-    margin: 44px 0; }
+  @media (max-width: 1060px) {
+    .footer {
+      grid-template-columns: 1fr 1fr 1fr; } }
+  @media (max-width: 490px) {
+    .footer {
+      -webkit-column-gap: 10px;
+         -moz-column-gap: 10px;
+              column-gap: 10px;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      font-size: 14px; } }
+  .footer__section:first-child {
+    margin-left: 20px; }
+  .footer__section:last-child {
+    margin-right: 20px; }
   .footer__header {
     font-size: 16px;
     line-height: 19px; }

@@ -5,5 +5,18 @@
   -webkit-column-gap: 80px;
      -moz-column-gap: 80px;
           column-gap: 80px; }
+  @media (max-width: 1060px) {
+    .page {
+      grid-template-columns: auto 4fr 3fr auto;
+      -webkit-column-gap: 40px;
+         -moz-column-gap: 40px;
+              column-gap: 40px; } }
+  @media (max-width: 800px) {
+    .page {
+      grid-template-areas: "header" "sidebar" "main" "footer";
+      grid-template-columns: auto;
+      -webkit-column-gap: 0;
+         -moz-column-gap: 0;
+              column-gap: 0; } }
 
 /*# sourceMappingURL=page.css.map */

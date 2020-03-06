@@ -1,5 +1,11 @@
 .sidebar {
   grid-area: sidebar;
   margin-top: 40px; }
+  @media (max-width: 800px) {
+    .sidebar {
+      margin: 20px auto; } }
+  @media (max-width: 640px) {
+    .sidebar {
+      margin: 20px; } }
 
 /*# sourceMappingURL=sidebar.css.map */
