@@ -5,7 +5,7 @@
   -webkit-column-gap: 80px;
      -moz-column-gap: 80px;
           column-gap: 80px; }
-  @media (max-width: 1060px) {
+  @media (max-width: 1080px) {
     .page {
       grid-template-columns: auto 4fr 3fr auto;
       -webkit-column-gap: 40px;
