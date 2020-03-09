@@ -14,11 +14,18 @@
 
   &__input {
     @include fontStyleDefault;
+    position: relative;
+    height: 50px;
     width: 100%;
     margin-bottom: 32px;
     padding: 14px 17px;
     box-sizing: border-box;
     border: 1px solid $borderColor;
+
+    &::-webkit-inner-spin-button {
+      display: none;
+    }
+
   }
 
   &__button {
