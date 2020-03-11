@@ -21,9 +21,19 @@
     padding: 14px 17px;
     box-sizing: border-box;
     border: 1px solid $borderColor;
+    border-radius: 4px;
+    outline: none;
 
     &::-webkit-inner-spin-button {
       display: none;
+    }
+
+    &::-webkit-calendar-picker-indicator {
+      display: none;
+    }
+
+    &:focus {
+      border-color: gray;
     }
 
   }
