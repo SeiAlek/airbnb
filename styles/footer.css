@@ -31,6 +31,8 @@
     font-size: 16px;
     line-height: 19px; }
   .footer__link {
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
     font-weight: 900;
     color: #3d4e61;
     text-decoration: none;
