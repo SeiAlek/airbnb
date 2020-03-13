@@ -1,3 +1,27 @@
+@import "utils";
+
+body {
+  @include fontStyleDefault;
+  @include indentReset;
+  background-color: #fff;
+}
+
 h1 {
-  @extend %h1;
+  @include h1;
+}
+
+h2 {
+  @include h2;
+}
+
+h3 {
+  @include h3;
+}
+
+p {
+  @include indentReset;
+}
+
+ul {
+  @include indentReset;
 }

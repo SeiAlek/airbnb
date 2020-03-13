@@ -1,6 +1,53 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
+@mixin buttonTransform {
+  transition: color 0.3s, border 0.3s, background-color 0.3s;
+}
+
+@mixin linkTransform {
+  transition: color 0.3s;
+}
+
+@mixin h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+@mixin h2 {
+  font-size: 28px;
+  line-height: 33px;
+}
+
+@mixin h3 {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+@mixin indentReset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin fontStyleDefault {
+  font-family: "Avenir", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: $mainColor;
+}
+
+@mixin fontStyleSmall {
+  font-family: "Avenir", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $mainColor;
+}
+
+@mixin link {
+  font-weight: 900;
+  color: $mainColor;
+  text-decoration: none;
+
   &:hover {
-    #{$_property}: $_toValue;
+    color: $hoverColor;
+    text-decoration: underline;
   }
 }

@@ -1,0 +1,22 @@
+.page {
+  display: grid;
+  grid-template-areas: " header header header header "
+    " . main sidebar . "
+    " footer footer footer footer ";
+  grid-template-columns: auto 490px 330px auto;
+  column-gap: 80px;
+
+  @media (max-width: 1080px) {
+    grid-template-columns: auto 4fr 3fr auto;
+    column-gap: 40px;
+  }
+
+  @media (max-width: 800px) {
+    grid-template-areas: "header"
+      "sidebar"
+      "main"
+      "footer";
+    grid-template-columns: auto;
+    column-gap: 0;
+  }
+}

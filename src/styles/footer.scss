@@ -1,0 +1,42 @@
+@import "utils";
+
+.footer {
+  display: grid;
+  grid-area: footer;
+  grid-auto-flow: column;
+  grid-template-columns: 280px 280px 280px;
+  column-gap: 30px;
+  justify-content: center;
+  padding: 44px 0;
+  box-shadow: 0 -1px 0 $borderColor;
+
+  @media (max-width: 1080px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 490px) {
+    column-gap: 10px;
+    justify-content: space-around;
+    font-size: 14px;
+  }
+
+  &__section:first-child {
+    margin-left: 20px;
+  }
+  &__section:last-child {
+    margin-right: 20px;
+  }
+
+  &__header {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__link {
+    @include linkTransform;
+    @include link;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,55 @@
+@import "utils";
+
+.form {
+  padding: 30px;
+  font-weight: 600;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid $borderColor;
+  border-radius: 3px;
+
+  &__price {
+    margin-bottom: 38px;
+  }
+
+  &__input {
+    @include fontStyleDefault;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 32px;
+    padding: 14px 17px;
+    box-sizing: border-box;
+    border: 1px solid $borderColor;
+    border-radius: 4px;
+    outline: none;
+
+    &::-webkit-inner-spin-button {
+      display: none;
+    }
+
+    &::-webkit-calendar-picker-indicator {
+      display: none;
+    }
+
+    &:focus {
+      border-color: gray;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    margin-bottom: 32px;
+    color: #fff;
+    background: #fd5c63;
+    border: 1px solid #fd5c63;
+    border-radius: 4px;
+
+    &:hover {
+      color: #fd5c63;
+      background: #fff;
+      border: 1px solid #fd5c63;
+      cursor: pointer;
+    }
+  }
+}
